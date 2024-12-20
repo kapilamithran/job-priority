@@ -101,7 +101,7 @@ button:hover {
     }
 
     #factors-grid {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
+        grid-template-columns: repeat(2, 1fr); /* Single column layout for mobile */
         gap: 5px; /* Reduced spacing */
         justify-content: center; /* Center the grid content horizontally */
     }
