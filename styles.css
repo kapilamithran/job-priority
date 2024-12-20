@@ -1,0 +1,127 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    overflow-y: auto; /* Allow scrolling if content exceeds screen height */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto; /* Ensure some space from the top */
+}
+
+h1 {
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+#factors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.draggable {
+    background-color: #fffbcc;
+    padding: 15px;
+    border: 2px solid #ffda79;
+    border-radius: 5px;
+    cursor: grab;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.draggable:hover {
+    background-color: #fff0b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#status-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.placeholder {
+    border: 2px dashed #aaa;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Mobile */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 5% auto; /* Ensure visibility from the top */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px; /* Adjust heading size for smaller screens */
+    }
+
+    #factors-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        gap: 5px; /* Reduced spacing */
+    }
+
+    .draggable {
+        font-size: 14px; /* Adjust font size */
+        padding: 10px; /* Smaller padding */
+    }
+
+    form {
+        gap: 5px; /* Reduce spacing in forms */
+    }
+
+    input {
+        font-size: 14px; /* Adjust input text size */
+        padding: 8px; /* Adjust input padding */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px; /* Adjust button padding */
+        width: 80%
+    }
+}

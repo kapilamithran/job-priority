@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Offer Priority</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HOLD AND DRAG</h1>
+        <h3>Arrange the factors in the order of priority that best reflects your career preferences. <br>(hold and drag the options to rearrange)</h3>
+        <br><br><br>
+            
+        
+        
+        <div id="factors-grid">
+            <div class="draggable" draggable="true">1. Salary</div>
+            <div class="draggable" draggable="true">2. Benefits</div>
+            <div class="draggable" draggable="true">3. Job location</div>
+            <div class="draggable" draggable="true">4. Work-life balance</div>
+            <div class="draggable" draggable="true">5. Company culture</div>
+            <div class="draggable" draggable="true">6. Career growth</div>
+            <div class="draggable" draggable="true">7. Job stability</div>
+            <div class="draggable" draggable="true">8. Work environment</div>
+            <div class="draggable" draggable="true">9. Role responsibilities</div>
+            <div class="draggable" draggable="true">10. Leadership style</div>
+            <div class="draggable" draggable="true">11. Learning opportunities</div>
+            <div class="draggable" draggable="true">12. Commute flexibility</div>
+            <div class="draggable" draggable="true">13. Company reputation</div>
+            <div class="draggable" draggable="true">14. Market position</div>
+            <div class="draggable" draggable="true">15. Personal alignment</div>
+            <div class="draggable" draggable="true">16. Team dynamics</div>
+            <div class="draggable" draggable="true">17. Health programs</div>
+            <div class="draggable" draggable="true">18. Bonuses</div>
+            <div class="draggable" draggable="true">19. Vacation policies</div>
+            <div class="draggable" draggable="true">20. Creativity opportunities</div>
+            <div class="draggable" draggable="true">21. Job title</div>
+            <div class="draggable" draggable="true">22. Career alignment</div>
+            <div class="draggable" draggable="true">23. Networking</div>
+            <div class="draggable" draggable="true">24. Industry trends</div>
+        </div>
+
+        <form id="player-form" method="POST">
+            <input type="text" name="entry.28274034" id="name" placeholder="Enter your name" required>
+            <input type="email" name="entry.2112322007" id="email" placeholder="Enter your email" required>
+            <input type="number" name="entry.254278321" id="experience" placeholder="Enter your experience in years" required>
+            <input type="number" name="entry.1820404158" id="age" placeholder="Enter your age" required>
+            <textarea name="entry.342785664" id="order" style="display:none"></textarea>
+            <button type="button" id="submit-button">Save My Order</button>
+        </form>
+        
+        
+        
+        
+        <p id="status-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
