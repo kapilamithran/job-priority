@@ -65,6 +65,7 @@ input {
 
 button {
     padding: 10px;
+    width: 80%;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -102,12 +103,15 @@ button:hover {
     #factors-grid {
         grid-template-columns: 1fr; /* Single column layout for mobile */
         gap: 5px; /* Reduced spacing */
+        justify-content: center; /* Center the grid content horizontally */
     }
 
     .draggable {
         font-size: 14px; /* Adjust font size */
         padding: 10px; /* Smaller padding */
         width: 80%;
+        margin: 0 auto; /* Center align horizontally */
+        text-align: center; /* Ensure content is centered inside */
     }
 
     form {
@@ -122,5 +126,8 @@ button:hover {
     button {
         font-size: 14px; /* Adjust button font size */
         padding: 8px; /* Adjust button padding */
+        width: 80%;
+        margin: 0 auto;
+        
     }
 }
