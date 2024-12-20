@@ -107,6 +107,7 @@ button:hover {
     .draggable {
         font-size: 14px; /* Adjust font size */
         padding: 10px; /* Smaller padding */
+        width: 80%;
     }
 
     form {
